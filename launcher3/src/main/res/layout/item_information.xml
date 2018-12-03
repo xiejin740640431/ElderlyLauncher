@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_selector"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_12"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_infor_titleimg"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_80"
+            android:layout_marginRight="@dimen/dp_10"
+            android:scaleType="fitXY"
+            android:src="@mipmap/huodong_" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:paddingTop="@dimen/dp_12"
+            android:text="睡觉前准备这三件，起床做到这三件"
+            android:textColor="@color/word_black"
+            android:textSize="@dimen/sp_17" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/public_gainsboro_horizontal_line"
+        android:layout_marginLeft="@dimen/dp_10"></View>
+
+</LinearLayout>

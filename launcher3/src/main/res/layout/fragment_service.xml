@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_05"
+    android:orientation="vertical"
+    >
+
+    <cn.colorfuline.elderlylauncher.widget.MRecyclerview
+        android:paddingTop="@dimen/dp_10"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

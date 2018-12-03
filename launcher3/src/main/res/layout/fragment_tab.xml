@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_33"
+    android:paddingTop="20dp"
+    android:orientation="vertical">
+
+
+
+    <com.ryg.library_indicatorfragment.TitleIndicator
+        android:id="@+id/titleIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_33"
+        android:gravity="center"
+        android:padding="3dp"
+        app:footerColor="@color/blue_light"
+        app:textColor="@color/white"
+        app:textSelectColor="@color/blue_light"
+        app:textSizeNormal="@dimen/sp_28"
+        app:textSizeSelected="@dimen/sp_28" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

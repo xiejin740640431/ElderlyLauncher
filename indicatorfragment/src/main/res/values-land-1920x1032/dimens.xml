@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">32dp</dimen>
+    <dimen name="activity_vertical_margin">32dp</dimen>
+    <!-- For buttons -->
+    <dimen name="common_text_size_large">36dp</dimen>
+    <!-- For list texts (top line) -->
+    <dimen name="common_text_size_middle">32dp</dimen>
+    <dimen name="common_text_size_middle_2">28dp</dimen>
+    <!-- For list texts (bottom line), summary texts, icon texts, descriptions, tag texts -->
+    <dimen name="common_text_size_small">26dp</dimen>
+    <dimen name="common_text_size_small_2">20dp</dimen>
+    <dimen name="common_text_size_small_3">24dp</dimen>
+    <dimen name="page_margin_width">0dp</dimen>
+    <dimen name="dp_5">10dp</dimen>
+    <dimen name="dp_2">4dp</dimen>
+    <dimen name="dp_3">6dp</dimen>
+    <dimen name="dp_1">2dp</dimen>
+    <dimen name="sp_12">24sp</dimen>
+    <dimen name="dp_20">40dp</dimen>
+</resources>

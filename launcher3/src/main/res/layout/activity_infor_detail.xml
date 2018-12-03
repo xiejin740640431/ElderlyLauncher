@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View style="@style/public_gainsboro_horizontal_line"
+        android:id="@+id/view"
+        android:layout_alignParentTop="true"></View>
+
+    <include layout="@layout/layout_title"></include>
+
+    <WebView
+        android:id="@+id/mWebView"
+        android:layout_below="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_3"
+        android:layout_below="@+id/rl_title"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/progressbar_web"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>

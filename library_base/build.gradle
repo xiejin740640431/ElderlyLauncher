@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersionVariable
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //网络请求
+    compile 'com.squareup.retrofit2:retrofit:latest.release'
+    compile 'com.squareup.retrofit2:converter-gson:latest.release'
+    compile 'com.squareup.okhttp3:logging-interceptor:latest.release'
+    compile 'com.squareup.retrofit2:adapter-rxjava:latest.release'
+    compile 'com.google.code.gson:gson:latest.release'
+    //rxandroid rxjava
+    compile 'io.reactivex:rxandroid:latest.release'
+    compile 'io.reactivex:rxjava:latest.release'
+    compile 'com.trello:rxlifecycle:1.0'
+    compile 'com.trello:rxlifecycle-components:1.0'
+    compile 'com.android.support:recyclerview-v7:23.1.0'
+    compile 'com.android.support:design:23.1.0'
+}

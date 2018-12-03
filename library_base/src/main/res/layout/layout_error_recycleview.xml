@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5"
+    android:visibility="gone">
+
+    <cn.colorfuline.base.view.FButton
+        android:id="@+id/btn_error"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:text="数据加载失败，点击重试"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_18"
+        app:buttonColor="@color/theme_red"
+        app:cornerRadius="@dimen/dp_4"
+        app:shadowEnabled="false" />
+</FrameLayout>

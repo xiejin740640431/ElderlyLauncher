@@ -1,0 +1,32 @@
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/widget_favorite_contacts"
+    android:minHeight="40dp"
+    android:minWidth="500dp"
+    android:previewImage="@mipmap/ic_launcher_home"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="86400000"
+    android:widgetCategory="home_screen">
+
+    <!--
+	android:minWidth : 最小宽度
+    android:minHeight ： 最小高度
+    android:minResizeWidth : 绝对最小宽度  小于minWidth或没设置horizontal时无效
+    android:minResizeHeight ： 绝对最小高度
+    android:updatePeriodMillis ： 更新widget的时间间隔(ms)，"86400000"为1个小时
+    android:previewImage ： 预览图片
+    android:initialLayout ： 加载到桌面时对应的布局文件
+    android:resizeMode ： widget可以被拉伸的方向。horizontal表示可以水平拉伸，vertical表示可以竖直拉伸
+    android:widgetCategory ： widget可以被显示的位置。home_screen表示可以将widget添加到桌面，keyguard表示widget可以被添加到锁屏界面。
+    android:initialKeyguardLayout ： 加载到锁屏界面时对应的布局文件
+     -->
+
+    <!--单元格个数:   很多手机提供4x4网格，平板电脑能提供8x7网格
+    (行 / 列)	对应的设置大小 (dp)
+    (minWidth / minHeight)
+    1	40dp
+    2	110dp
+    3	180dp
+    4	250dp
+    …	…
+    n	70 × n − 30-->
+</appwidget-provider>

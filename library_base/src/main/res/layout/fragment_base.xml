@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_base_rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.colorfuline.base.widget.CustomTitleBar
+        android:id="@+id/customTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_bg"
+        app:elevation="@dimen/default_title_bar_elevation"></cn.colorfuline.base.widget.CustomTitleBar>
+
+    <FrameLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/customTitleBar"
+        android:visibility="visible"></FrameLayout>
+</RelativeLayout>

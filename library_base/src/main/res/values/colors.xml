@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="spinKit_loading_color">#F44336</color>
+
+    <!-- FButton的默认颜色 -->
+    <color name="fbutton_default_color">#3eadeb</color>
+    <color name="fbutton_default_shadow_color">#ff3493c8</color>
+    <color name="main_bg">#f5f3f4</color>
+    <color name="red_bg">#F44336</color>
+    <!-- indicator -->
+    <color name="common_white">#ffffff</color>
+    <color name="common_white_shadow">#414141</color>
+    <color name="common_white_disabled">#e7e7e7</color>
+    <!-- For main texts -->
+    <color name="common_dark">#3d5562</color>
+    <color name="common_dark_shadow">#dedede</color>
+    <color name="common_dark_disabled">#9aa7af</color>
+    <!-- For secondary texts -->
+    <color name="common_grey">#8496a0</color>
+    <color name="common_grey_disabled">#aabbc4</color>
+    <!-- For danger cases, such as virus, file delete... -->
+    <color name="common_red">#e62f2f</color>
+    <!-- For warning cases, such as trashes... -->
+    <color name="common_yellow">#f1930d</color>
+    <!-- For safe cases -->
+    <color name="common_green">#60990c</color>
+    <!-- For suggestions -->
+    <color name="common_blue">#4b8bbd</color>
+
+    <color name="tab_indicator_text_selected">#ffffff</color>
+    <color name="tab_indicator_text_unselected">#aac5d7</color>
+
+    <!-- 默认颜色 -->
+    <color name="default_red_unselector">#F44336</color>
+    <color name="default_red_selector">#D32F2F</color>
+    <!-- 默认按压的颜色 -->
+    <color name="default_gray_pressed">#f9d6cece</color>
+    <color name="default_background">#f0f0f0</color>
+
+    <color name="default_title_bar_color">#333333</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transparent_05">#F5F5F5</color>
+
+    <color name="color_33">#333333</color>
+    <color name="white">#FFFFFF</color><!--白色 -->
+    <color name="blue_light">#76A6EF</color>
+    <color name="rippelColor">#0099CC</color>
+    <color name="color_f5">#F5F5F5</color>
+    <color name="theme_red">#fd473c</color>
+    <color name="color_15">#151515</color>
+</resources>

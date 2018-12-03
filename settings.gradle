@@ -1,0 +1,1 @@
+include ':launcher3', ':wallpaperpick', 'library_base', ':indicatorfragment', ':library_swipetoloadlayout'

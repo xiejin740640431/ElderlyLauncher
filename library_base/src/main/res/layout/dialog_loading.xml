@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_loading"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingTop="@dimen/dp_20"
+    android:paddingBottom="@dimen/dp_20"
+    android:paddingRight="@dimen/dp_40"
+    android:paddingLeft="@dimen/dp_20"
+    android:visibility="visible">
+    <cn.colorfuline.base.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_centerVertical="true"
+        app:SpinKit_Color="@color/spinKit_loading_color"
+        app:SpinKit_Style="FadingCircle"
+        android:indeterminate="true" />
+
+    <TextView
+        android:id="@+id/tv_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/spin_kit"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_centerVertical="true"
+        android:text="数据加载中..."
+        android:textSize="@dimen/sp_15"
+        android:visibility="visible" />
+</RelativeLayout>

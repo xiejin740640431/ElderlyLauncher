@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="wordsArray">
+        <item>正常</item>
+        <item>大</item>
+        <item>特大</item>
+    </string-array>
+</resources>

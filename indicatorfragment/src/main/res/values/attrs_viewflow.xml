@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<declare-styleable name="TitleIndicator">-->
+        <!--<attr name="titlePadding" format="dimension" />-->
+        <!--&lt;!&ndash; Left/right padding of not active view titles. &ndash;&gt;-->
+        <!--<attr name="clipPadding" format="dimension" />-->
+        <!--<attr name="textColor" format="color|reference" />-->
+        <!--<attr name="textSizeNormal" format="dimension" />-->
+        <!--<attr name="textSizeSelected" format="dimension" />-->
+        <!--<attr name="needLine" format="boolean"></attr>-->
+        <!--<attr name="footerLineHeight" format="dimension" />-->
+        <!--<attr name="footerColor" format="color" />-->
+        <!--<attr name="footerTriangleHeight" format="dimension" />-->
+        <!--<attr name="perItemWidthType" format="integer">-->
+            <!--<enum name="layoutWidth" value="-1"></enum>-->
+            <!--<enum name="textWidth" value="-2"></enum>-->
+        <!--</attr>-->
+    <!--</declare-styleable>-->
+
+    <declare-styleable name="TitleIndicator">
+        <attr name="titlePadding" format="dimension" />
+        <!-- Left/right padding of not active view titles. -->
+        <attr name="clipPadding" format="dimension" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="textSelectColor" format="color|reference" />
+        <attr name="textSizeNormal" format="dimension" />
+        <attr name="textSizeSelected" format="dimension" />
+        <attr name="needLine" format="boolean"></attr>
+        <attr name="footerLineHeight" format="dimension" />
+        <attr name="footerColor" format="color" />
+        <attr name="footerTriangleHeight" format="dimension" />
+        <attr name="perItemWidthType" format="integer">
+            <enum name="layoutWidth" value="-1"></enum>
+            <enum name="textWidth" value="-2"></enum>
+        </attr>
+    </declare-styleable>
+
+</resources>

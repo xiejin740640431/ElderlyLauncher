@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f0f0f0">
+
+    <LinearLayout
+        android:id="@+id/layout_content_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View style="@style/DefaultLineStyle"></View>
+
+        <RelativeLayout
+            android:id="@+id/layout_font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/default_white_selector"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20">
+
+            <cn.colorfuline.elderlylauncher.widget.ReadTextView
+                android:id="@+id/tv_str_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/str_font"
+                android:textColor="@color/default_setting_text_color"
+                android:textSize="@dimen/default_setting_text_size" />
+
+            <cn.colorfuline.elderlylauncher.widget.RangeSeekbar
+                android:id="@+id/seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_toRightOf="@id/tv_str_font"
+                app:cellMode="other"
+                app:cells="2"
+                app:hideProgressHint="true"
+                app:hintBGHeight="28dp"
+                app:lineColorEdge="#c3c3c3"
+                app:lineColorSelected="#3F51B5"
+                app:markTextArray="@array/wordsArray"
+                app:max="1.5"
+                app:min="1.0"
+                app:seekBarMode="single"
+                app:seekbarHight="8dp"
+                app:textPadding="17dp"
+                app:textSize="12sp"
+                app:thumbSize="36dp" />
+        </RelativeLayout>
+
+        <View style="@style/DefaultLineStyle"></View>
+
+        <cn.colorfuline.elderlylauncher.widget.ReadRelativeLayout
+            android:id="@+id/layout_system_setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_layout_height"
+            android:background="@drawable/default_white_selector"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20">
+
+            <cn.colorfuline.elderlylauncher.widget.ReadTextView
+                android:id="@+id/tv_str_system_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/str_system_setting"
+                android:textColor="@color/default_setting_text_color"
+                android:textSize="@dimen/default_setting_text_size" />
+
+            <ImageView
+                android:id="@+id/img_system_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_navigate_next_grey" />
+        </cn.colorfuline.elderlylauncher.widget.ReadRelativeLayout>
+
+        <View style="@style/DefaultLineStyle"></View>
+
+        <cn.colorfuline.elderlylauncher.widget.ReadRelativeLayout
+            android:id="@+id/layout_skin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_layout_height"
+            android:visibility="gone"
+            android:background="@drawable/default_white_selector"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20">
+
+            <cn.colorfuline.elderlylauncher.widget.ReadTextView
+                android:id="@+id/tv_str_skin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/str_skin_set"
+                android:textColor="@color/default_setting_text_color"
+                android:textSize="@dimen/default_setting_text_size" />
+
+            <ImageView
+                android:id="@+id/img_skin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_navigate_next_grey" />
+        </cn.colorfuline.elderlylauncher.widget.ReadRelativeLayout>
+
+        <View style="@style/DefaultLineStyle" android:visibility="gone"></View>
+
+        <View
+            style="@style/DefaultLineStyle"
+            android:layout_marginTop="@dimen/dp_10"></View>
+
+        <cn.colorfuline.elderlylauncher.widget.ReadRelativeLayout
+            android:id="@+id/layout_read_screen"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_layout_height"
+            android:background="@drawable/default_white_selector"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20">
+
+            <cn.colorfuline.elderlylauncher.widget.ReadTextView
+                android:id="@+id/tv_str_read_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/str_read_screen"
+                android:textColor="@color/default_setting_text_color"
+                android:textSize="@dimen/default_setting_text_size" />
+
+            <Switch
+                android:id="@+id/switch_read_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </cn.colorfuline.elderlylauncher.widget.ReadRelativeLayout>
+
+        <View
+            style="@style/DefaultLineStyle"
+            android:layout_marginBottom="@dimen/dp_10"></View>
+
+        <View style="@style/DefaultLineStyle"></View>
+
+        <cn.colorfuline.elderlylauncher.widget.ReadRelativeLayout
+            android:id="@+id/layout_reset_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_layout_height"
+            android:background="@drawable/default_white_selector"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20">
+
+            <cn.colorfuline.elderlylauncher.widget.ReadTextView
+                android:id="@+id/tv_str_reset_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/str_reset_launcher"
+                android:textColor="@color/default_setting_text_color"
+                android:textSize="@dimen/default_setting_text_size" />
+
+            <ImageView
+                android:id="@+id/img_reset_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_navigate_next_grey" />
+        </cn.colorfuline.elderlylauncher.widget.ReadRelativeLayout>
+
+        <View style="@style/DefaultLineStyle"></View>
+
+        <cn.colorfuline.elderlylauncher.widget.ReadRelativeLayout
+            android:id="@+id/layout_system_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_layout_height"
+            android:background="@drawable/default_white_selector"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20">
+
+            <cn.colorfuline.elderlylauncher.widget.ReadTextView
+                android:id="@+id/tv_str_system_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/str_system_launcher"
+                android:textColor="@color/default_setting_text_color"
+                android:textSize="@dimen/default_setting_text_size" />
+
+            <ImageView
+                android:id="@+id/img_system_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_navigate_next_grey" />
+        </cn.colorfuline.elderlylauncher.widget.ReadRelativeLayout>
+
+        <View style="@style/DefaultLineStyle"></View>
+
+        <cn.colorfuline.elderlylauncher.widget.ReadRelativeLayout
+            android:id="@+id/layout_current_version"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_layout_height"
+            android:background="@drawable/default_white_selector"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20">
+
+            <cn.colorfuline.elderlylauncher.widget.ReadTextView
+                android:id="@+id/tv_str_current_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/str_current_version"
+                android:textColor="@color/default_setting_text_color"
+                android:textSize="@dimen/default_setting_text_size" />
+
+            <TextView
+                android:id="@+id/tv_current_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_toLeftOf="@+id/img_current_version"
+                android:text="V1.0.0"
+                android:textColor="@color/default_setting_text_color"
+                android:textSize="@dimen/default_setting_text_size" />
+
+            <ImageView
+                android:id="@+id/img_current_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_navigate_next_grey" />
+        </cn.colorfuline.elderlylauncher.widget.ReadRelativeLayout>
+
+        <View style="@style/DefaultLineStyle"></View>
+    </LinearLayout>
+</ScrollView>

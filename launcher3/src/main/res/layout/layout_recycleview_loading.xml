@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f5"
+        android:gravity="center_horizontal"
+        >
+
+        <cn.colorfuline.base.view.RippleBackground
+            android:id="@+id/ripple_loading"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:layout_centerVertical="true"
+            app:rb_color="@color/theme_red"
+            app:rb_duration="2000"
+            app:rb_radius="@dimen/dp_25"
+            app:rb_rippleAmount="3"
+            app:rb_scale="2"
+            app:rb_type="strokeRipple">
+
+            <ImageView
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/loading_logo" />
+        </cn.colorfuline.base.view.RippleBackground>
+
+        <TextView
+            android:id="@+id/tv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ripple_loading"
+            android:layout_centerVertical="true"
+            android:text="数据加载中..."
+            android:textSize="@dimen/sp_18"
+            android:visibility="visible" />
+    </RelativeLayout>
+</FrameLayout>
